@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "Title": "Utility Expense",
+    "Type": "EXPENSE",
+    "Id": "2e040f3e-891d-4a67-8f60-f09fcbf859b3"
+  },
+  {
+    "Title": "Commision",
+    "Type": "INCOME",
+    "Id": "ca2ec493-e473-4f29-bcc0-0772de0778da"
+  },
+  {
+    "Title": "Consulting",
+    "Type": "INCOME",
+    "Id": "234eb024-a8cc-4fc2-aaf8-62eccb0e7e7b"
+  },
+  {
+    "Title": "Freelance",
+    "Type": "INCOME",
+    "Id": "ff8e164c-aeb4-4e5f-bcba-90548a7ab0bd"
+  },
+  {
+    "Title": "Grab Rider",
+    "Type": "INCOME",
+    "Id": "5ae405f5-9695-4457-a39d-19d0b4e8f93d"
+  },
+  {
+    "Title": "Concert",
+    "Type": "EXPENSE",
+    "Id": "76c3f698-38b1-4548-93b6-e116ff08f4cb"
+  },
+  {
+    "Title": "Transportation",
+    "Type": "EXPENSE",
+    "Id": "56e670b0-7365-45e7-9873-dfd8535dc8a5"
+  },
+  {
+    "Title": "Food",
+    "Type": "EXPENSE",
+    "Id": "f404e2d7-46ad-4cb9-933c-7b8ef2eebe83"
+  },
+  {
+    "Title": "Shopping",
+    "Type": "EXPENSE",
+    "Id": "0fb58a1f-108d-46f8-baae-55dfa6b1fca6"
+  }
+]
