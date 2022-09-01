@@ -38,6 +38,7 @@ exports.getCatById = async (req, res, next) => {
 exports.updateCategory = async (req, res, next) => {
   try {
     const { Title, Type } = req.body;
+    await validateCategory(Title, Type);
     const { Id } = req.params;
     const oldCat = await readCategory();
     const newCat = { Title: Title, Type: Type, Id: Id };

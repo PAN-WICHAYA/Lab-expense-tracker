@@ -40,7 +40,7 @@ exports.getTranById = async (req, res, next) => {
     const { id } = req.params;
     const oldTrans = await readTransaction();
     const transaction = oldTrans.find((item) => item.id === id) ?? null;
-    res.json({ transactions });
+    res.json({ transaction });
   } catch (err) {
     next(err);
   }
@@ -48,13 +48,16 @@ exports.getTranById = async (req, res, next) => {
 exports.updateTransaction = async (req, res, next) => {
   try {
     const { payee, amount, date, category } = req.body;
+    await validationTransaction(payee, amount, date, category);
     const { id } = req.params;
     const oldTrans = await readCategory();
+    const oldCat = await readCategory();
+    const categoryID = oldCat.find((item) => item.Title === category);
     const newTran = {
       payee: payee,
       amount: amount,
       date: date,
-      category: category,
+      category: categoryID.Id,
       id: id,
     };
 
